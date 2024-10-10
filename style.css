@@ -58,13 +58,13 @@ body {
     color: #ffd700;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     .top-bar-left, .top-bar-right {
         flex-basis: auto; 
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .top-bar-left, .top-bar-right {
         flex-basis: 100%; 
         justify-content: center; 
@@ -84,7 +84,7 @@ body {
 .container {
     width: 100%;
     margin: auto;
-    max-width: 1200px;
+    
 }
 
 .navcontainer {
@@ -188,7 +188,7 @@ header .logo img {
     padding: 0; 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .menu-toggle {
         display: block; 
     }
@@ -228,7 +228,10 @@ header .logo img {
     align-items: center;
     text-align: left;
     position: relative;
+    padding: 20px;
+    box-sizing: border-box;
 }
+
 .hero h1 {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -236,12 +239,14 @@ header .logo img {
     color: #12505e;
     margin-bottom: 15px;
 }
+
 .hero p {
     font-weight: 100;
     font-size: 17px;
     color: #434650;
     margin-bottom: 25px;
 }
+
 .hero .btn {
     padding: 12px 24px;
     background-color: #21c996;
@@ -250,9 +255,11 @@ header .logo img {
     border-radius: 9px;
     font-size: 13px;
 }
+
 .hero .btn:hover {
     background-color: #218838;
 }
+
 .carousel-container {
     position: relative;
     width: 100%;
@@ -260,16 +267,20 @@ header .logo img {
     margin: 0 auto;
     padding: 0 20px;
 }
+
 .carousel-slide {
     display: none;
     animation: fadeEffect 1.5s;
 }
+
 .carousel-slide.active {
     display: block;
 }
+
 .carousel-content {
     width: 50%;
 }
+
 .carousel-nav {
     position: absolute;
     top: 50%;
@@ -278,6 +289,7 @@ header .logo img {
     justify-content: space-between;
     width: 100%;
 }
+
 .carousel-nav button {
     background: rgba(33, 201, 150, 0.7);
     border: none;
@@ -292,20 +304,57 @@ header .logo img {
     align-items: center;
     justify-content: center;
 }
+
 .carousel-nav button:hover {
     background: rgba(33, 201, 150, 1);
 }
+
 @keyframes fadeEffect {
     from {opacity: 0.4}
     to {opacity: 1}
 }
-.experience {
-    padding: 50px 0;
-    display: flex;
-    align-items: center;
-    background-color: #f4f5f4 !important;
-    background-size: cover; 
+
+@media only screen and (max-width: 1024px) {
+    .hero {
+        height: 450px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
 }
+
+@media only screen and (max-width: 600px) {
+    .hero {
+        height: 400px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .carousel-content {
+        width: 100%;
+    }
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+
 
 .experience-image {
     flex: 1;
@@ -894,4 +943,5 @@ button:hover {
     margin-top: 20px;
     font-size: 12px;
 } 
+
 
