@@ -337,7 +337,7 @@ header .logo img {
     }
 
     .hero h1 {
-        font-size: 30px;
+        font-size: 25px; /* Reduced font size for mobile */
     }
 
     .hero p {
@@ -353,6 +353,7 @@ header .logo img {
     max-width: 100%;
     height: auto;
 }
+
 
 
 
